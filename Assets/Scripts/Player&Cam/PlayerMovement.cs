@@ -130,14 +130,14 @@ public class PlayerMovement : MonoBehaviour
             //蹭墙问题
             if(isWalled&&moveDirection.magnitude>0)
             {
-                moveSpeed=1;
+                moveSpeed=3;
                 timeSinceDirectionChange=0.0f;
             }
             targetVelocity = moveDirection * moveSpeed;
         }
-
+        
         // 施加目标速度
-        currentVelocity = Vector3.Lerp(currentVelocity, targetVelocity, Time.deltaTime * 10f);  // 使用插值平滑过渡
+        currentVelocity = targetVelocity;  // 使用插值平滑过渡
         rb.velocity = new Vector3(currentVelocity.x, rb.velocity.y, currentVelocity.z);  // 保持y轴速度不变
     }
 
@@ -146,13 +146,12 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && Mathf.Abs(rb.velocity.y) < 0.1f)
         {
             isJumping = false;
-            
         }
 
         // 只有在地面上时才允许跳跃
         if (isGrounded || (jumpWindowTimer > 0 && !isJumping))
         {
-            if (Input.GetButtonDown("Jump") && !isJumping)
+            if (Input.GetButton("Jump") && !isJumping)
             {
                 isJumping = true;
                 hasJumped = true;

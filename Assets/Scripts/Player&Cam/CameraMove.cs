@@ -97,7 +97,7 @@ public class CameraMove : MonoBehaviour
         m_deltY -= Input.GetAxis("Mouse Y") * m_rSpeed; // 垂直旋转（控制摄像机）
 
         m_deltX = ClampAngle(m_deltX, -360, 360);
-        m_deltY = ClampAngle(m_deltY, -70, 70);
+        m_deltY = ClampAngle(m_deltY, -90, 90);
 
         // 控制玩家水平旋转（绕Y轴）
         playerTrans.rotation = Quaternion.Euler(0, m_deltX, 0);

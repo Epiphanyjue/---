@@ -117,7 +117,7 @@
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"D:/unity/期末作业-方块解谜/Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"D:/unity/期末作业-方块解谜/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"D:/unity/期末作业-方块解谜/Library/PackageCache/com.unity.visualscripting@1.9.5/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"D:/UnityPackage/2021.3.38f1c1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"D:/UnityPackage/2021.3.38f1c1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"D:/UnityPackage/2021.3.38f1c1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -348,6 +348,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Cube/BlackCube.cs"
 "Assets/Scripts/Cube/CubeParent.cs"
+"Assets/Scripts/Instance/BagManager.cs"
 "Assets/Scripts/Player&Cam/CameraMove.cs"
 "Assets/Scripts/Player&Cam/Inter_Cube.cs"
 "Assets/Scripts/Player&Cam/PlayerController.cs"
